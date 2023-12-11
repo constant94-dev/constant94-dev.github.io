@@ -51,39 +51,53 @@
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h3 class="h2 screen mb-4">Skills</h3>
-        <div class="row align-items-center">
-            {{#each skills}}
-            <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-                <small>{{ this.[0] }}</small>
-            </div>
-            <div class="col-print-1 col-3 col-md-2 col-lg-1">
-                <div class="skills">
-                    <div class="skills-bar" style="width: {{ this.[1] }}%"></div>
-                </div>
-            </div>
-            {{/each}}
+        <h2 class="mb-4">About Me.</h2>
+        <div>
+            <p>웹/앱 서비스 백엔드 개발과 스타트업 조직에서의 다양한 경험이 있습니다.
+            Java & Spring framework, MySQL, Azure를 주로 사용하여 설계, 개발, 운영까지 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
+
+            <p>개발하며 경험한 오류를 분석하고 재밌는 발견들을 포스팅하고 있습니다.
+            현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 GitHub 커뮤니티 활동을 통해 다양한 경험을 즐기고 있습니다.
+            저는 내가 수행하는 엔지니어링이 비즈니스 가치로 연결되었을 때 기쁨을 느낍니다.</p>
+
+            <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
+            결국 엔지니어링의 종착지는 수많은 연결을 통해 개인의 삶 속에 녹아드는 것으로 생각하기에 연결에 도움을 줄 수 있는 한 명의 개발자로서 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
         </div>
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
-    </div>
-
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Professional Experience</h2>
-        {{#each positions}}
+        <h2 class="mb-4">Work Experience.</h2>
+        
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
-            <div class="col-md-2 pt-1">
-                {{ period }}
+            <div class="col-md-12">
+                <h3>노다멘 | <samp>2020.12 - 2023.08</samp></h3>
+                <h4>Software Engineer</h4>
+                <a href="https://patron.digital/ko/home">
+                    <span>https://patron.digital/ko/home</span>
+                </a>
+                <p class="col-12"></p>
             </div>
-            <div class="col-md-10">
+            {{#each positions}}
+            <div class="col-md-9">
                 <h3 class="fs-4 fw-normal">{{ title }}</h3>
+                <small>{{ period }}</small>
 
-                <div>{{{markdown contents }}}</div>
+                <p>
+                    <strong>{{ problem }}</strong>
+                    <div>{{{ markdown problem_contents }}}</div>
+                </p>
+
+                <p>
+                    <strong>{{ cause }}</strong>
+                    {{#each cause_contents}}
+                    <div>{{{ markdown this }}}</div>
+                    {{/each}}
+                </p>
+
+                <p>
+                    <strong>{{ effect }}</strong>
+                    <div>{{{ markdown effect_contents }}}</div>
+                </p>
 
                 <p>
                     {{#each skills }}
@@ -91,22 +105,41 @@
                     {{/each}}
                 </p>
             </div>
+            <p class="col-12"></p>
+            {{/each}}
         </div>
-        {{/each}}
+        
     </div>
 
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Education</h2>
-        <div>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</div>
+        <h3 class="h2 screen mb-4">Skills.</h3>
+        <div class="row align-items-center">
+            {{#each skills}}
+            <div class="col-md-2 pt-1">
+                <strong>{{ this.title }}</strong>
+            </div>
+            <div class="col-md-10">
+                <p>
+                    {{#each this.skills}}
+                    <span class="badge text-body border border-1">{{ this }}</span>
+                    {{/each}}
+                </p>
+            </div>
+            {{/each}}
+
+            
+            
+            
+        </div>
     </div>
 
-    <h2 class="mb-4">Additional Experience</h2>
+    <h2 class="mb-4">Education & Additional Experience</h2>
 
     {{#each experience}}
     <div class="mb-4">
         <h3 class="fs-4 fw-normal">{{ header }}</h3>
 
-        {{{markdown contents }}}
+        {{{ markdown contents }}}
 
         <div>
             {{#each skills }}
@@ -115,6 +148,9 @@
         </div>
     </div>
     {{/each}}
+
+    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1"></div>
+
 </div>
 </body>
 </html>
