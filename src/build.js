@@ -19,17 +19,17 @@ fs.copySync(srcDir + '/assets', outputDir);
 
 // Build HTML
 handlebars.registerHelper('markdown', markdownHelper);
-const source = fs.readFileSync(srcDir + '/templates/index.html', 'utf-8');
+const source = fs.readFileSync(srcDir + '/custom.html', 'utf-8');
 const template = handlebars.compile(source);
 const pdfFileName = `${getSlug(templateData.name)}.${getSlug(templateData.title)}.pdf`;
 const html = template({
   ...templateData,
-  baseUrl: `https://${username()}.github.io/${repoName.sync()}`,
+  baseUrl: `https://${username()}.github.io/`,
   pdfFileName,
   updated: dayjs().format('MMMM D, YYYY'),
 });
 
-fs.writeFileSync(outputDir + '/index.html', html);
+fs.writeFileSync(outputDir + '/custom.html', html);
 
 // Build PDF
-buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`);
+buildPdf(`${outputDir}/custom.html`, `${outputDir}/${pdfFileName}`);
