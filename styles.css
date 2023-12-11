@@ -13,6 +13,13 @@ a {
     text-decoration: none;
 }
 
+#border-dark-line {
+   border: solid 1px black;
+   background-color: #000000;
+   box-shadow: #000000;
+   margin: 10px 0 30px 0;
+}
+
 h1, h2, h3, h4 {
     color: #000000;
 }
