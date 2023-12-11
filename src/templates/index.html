@@ -85,7 +85,7 @@
             </div>
             {{#each positions}}
             <div class="col-md-9">
-                <h5 class="fs-4 fw-normal"><b>{{ title }}</b></h5>
+                <h5 class="fs-4 fw-normal">{{ title }}</h5>
                 <p>
                     <small>{{ period }}</small>
                 </p>
@@ -123,21 +123,15 @@
         <h3 class="h2 screen mb-4">Skills.</h3>
         <div class="row align-items-center">
             {{#each skills}}
-            <div class="col-md-2 pt-1">
+            <div class="col-md-2">
                 <strong>{{ this.title }}</strong>
             </div>
             <div class="col-md-10">
-                <p>
-                    {{#each this.skills}}
+                {{#each this.skills}}
                     <span class="badge text-body border border-1">{{ this }}</span>
-                    {{/each}}
-                </p>
+                {{/each}}
             </div>
             {{/each}}
-
-            
-            
-            
         </div>
     </div>
 
@@ -147,10 +141,10 @@
 
     {{#each experience}}
     <div class="mb-4">
-        <h3 class="fs-4 fw-normal">{{ header }}</h3>
-
-        {{{ markdown contents }}}
-
+        <h5 class="fs-4 fw-normal">{{ header }}</h5>
+        <p>
+            {{{ markdown contents }}}
+        </p>
         <div>
             {{#each skills }}
             <span class="badge text-body border border-1">{{ this }}</span>
