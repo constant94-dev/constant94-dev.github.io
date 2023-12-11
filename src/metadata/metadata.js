@@ -98,5 +98,7 @@ module.exports = {
       skills: ['Network', '아두이노'],
       contents: ` 2013.03 - 2017.08 (졸업) | Network 관련 전공 지식과 전자회로 실습`
     }
-  ]
+  ],
+  pdf_name: 'aaron',
+  pdf_title: 'back-end-engineer'
 };
