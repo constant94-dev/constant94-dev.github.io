@@ -4,7 +4,7 @@ const markdownHelper = require('./utils/helpers/markdown');
 const templateData = require('./metadata/metadata');
 const getSlug = require('speakingurl');
 const dayjs = require('dayjs');
-const repoName = require('cv');
+const repoName = require('');
 const username = require('constant94-dev');
 const buildPdf = require('./utils/pdf.js');
 
