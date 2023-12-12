@@ -85,8 +85,8 @@
             </div>
             {{#each positions}}
             <div class="col-md-9">
-                <h5 class="fs-4 fw-normal">{{ title }}</h5>
                 <p>
+                    <strong class="fs-5 fw-normal">{{ title }}</strong>
                     <small>{{ period }}</small>
                 </p>
                 <p>
@@ -143,8 +143,8 @@
 
     {{#each experience}}
     <div class="mb-4">
-        <h5 class="fs-4 fw-normal">{{ header }}</h5>
-        <p>
+        <samp class="fw-normal">{{ header }}</s>
+        <p class="fw-normal">
             {{{ markdown contents }}}
         </p>
         <div>
