@@ -53,7 +53,7 @@
     <div id="border-dark-line"></div>
 
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">About Me.</h2>
+        <h3 class="mb-4">About Me.</h3>
         <div>
             <p>웹/앱 서비스 백엔드 개발과 스타트업 조직에서의 다양한 경험이 있습니다.
             Java & Spring framework, MySQL, Azure를 주로 사용하여 설계, 개발, 운영까지 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
@@ -70,7 +70,7 @@
     <div id="border-dark-line"></div>
 
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Work Experience.</h2>
+        <h3 class="mb-4">Work Experience.</h3>
         
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
             <div class="col-md-12">
@@ -120,24 +120,26 @@
     <div id="border-dark-line"></div>
 
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
-        <h3 class="h2 screen mb-4">Skills.</h3>
+        <h3 class="mb-4">Skills.</h3>
         <div class="row align-items-center">
             {{#each skills}}
-            <div class="col-md-2">
-                <strong>{{ this.title }}</strong>
-            </div>
-            <div class="col-md-10">
-                {{#each this.skills}}
-                    <span class="badge text-body border border-1">{{ this }}</span>
-                {{/each}}
-            </div>
+            <p>
+                <div class="col-md-2">
+                    <strong>{{ this.title }}</strong>
+                </div>
+                <div class="col-md-10">
+                    {{#each this.skills}}
+                        <span class="badge text-body border border-1">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </p>
             {{/each}}
         </div>
     </div>
 
     <div id="border-dark-line"></div>
 
-    <h2 class="mb-4">Education & Additional Experience</h2>
+    <h3 class="mb-4">Education & Additional Experience</h3>
 
     {{#each experience}}
     <div class="mb-4">
