@@ -4,7 +4,7 @@ module.exports = {
   facts: {
     'Residence': '<a href="https://www.google.com/maps/place/Eunpyeong-gu,+Seoul/data=!3m1!4b1!4m6!3m5!1s0x357c978634080885:0xffe21430ce509646!8m2!3d37.6191784!4d126.9270142!16s%2Fm%2F026rmdp?entry=ttu"><i class="fa fa-home fact-icon"></i>Seoul, Eunpyeong-gu</a>',
     'GitHub': '<a href="https://github.com/constant94-dev"><i class="fa fa-brands fa-github fact-icon"></i>constant94-dev</a>',
-    'Tistoty': '<a href="https://doit94.tistory.com/"><i class="fa fa-brands fa-blogger fact-icon"></i>Just Do it!</a>',
+    'Tistory': '<a href="https://doit94.tistory.com/"><i class="fa fa-brands fa-blogger fact-icon"></i>Just Do it!</a>',
     'Email': '<a href="mailto:brainstorm2973@gmail.com"><i class="fa fa-envelope fact-icon"></i>brainstorm2973@gmail.com</a>'
   },
   positions: [
