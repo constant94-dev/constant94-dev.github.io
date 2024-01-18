@@ -55,15 +55,14 @@
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
         <h3 class="mb-4">About Me.</h3>
         <div>
-            <p>웹/앱 서비스 백엔드 개발과 스타트업 조직에서의 다양한 경험이 있습니다.
+            <p>웹/앱 서비스 백엔드 개발자로서 스타트업 조직에서의 다양한 경험이 있습니다
             Java & Spring framework, MySQL, Azure를 주로 사용하여 설계, 개발, 운영까지 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
 
             <p>개발하며 경험한 오류를 분석하고 재밌는 발견들을 포스팅하고 있습니다.
-            현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 GitHub 커뮤니티 활동을 통해 다양한 경험을 즐기고 있습니다.
-            저는 내가 수행하는 엔지니어링이 비즈니스 가치로 연결되었을 때 기쁨을 느낍니다.</p>
+            현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 GitHub 커뮤니티 활동을 통해 다양한 경험을 즐기고 있습니다.</p>
 
-            <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
-            결국 엔지니어링의 종착지는 수많은 연결을 통해 개인의 삶 속에 녹아드는 것으로 생각하기에 연결에 도움을 줄 수 있는 한 명의 개발자로서 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
+            <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 이해관계자들과 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
+            엔지니어링의 결과는 결국, 개인의 삶 속에 녹아드는 것으로 생각하기에 연결에 도움을 줄 수 있는 한 명의 개발자로서 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
         </div>
     </div>
 
@@ -74,15 +73,17 @@
         
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
             <div class="col-md-12">
-                <h5>노다멘 | <samp>2020.12 - 2023.08</samp></h5>
+                <h5><a href="https://patron.digital/ko/welcome">노다멘</a> | <samp>2020.12 - 2023.08</samp></h5>
                 <strong>Software Engineer</strong>
-                <p>
-                    <a href="https://patron.digital/ko/home">
-                        <span>https://patron.digital/ko/home</span>
-                    </a>
-                </p>
-                <p class="col-12"></p>
+                <div class="row" style="margin: 10px 0 10px 0">
+                    <div class="col bg-light border border-primary rounded">
+                        <span>노다멘은 상류층의 소유물이었던 High-end 예술에서 대중들의 예술로 누구나 저렴하게 쉽고 편하게 즐길 수 있는 미술 감상 서비스입니다.</span>
+                    </div>
+                </div>
             </div>
+
+            <p class="col-12" style="height: 20px;"></p>
+
             {{#each positions}}
             <div class="col-md-9">
                 <p>
@@ -92,19 +93,16 @@
                 <p>
                     <strong>{{ problem }}</strong>
                     <div>{{{ markdown problem_contents }}}</div>
-                </p>
 
                 <p>
                     <strong>{{ cause }}</strong>
                     {{#each cause_contents}}
                     <div>{{{ markdown this }}}</div>
-                    {{/each}}
-                </p>
+                {{/each}}
 
                 <p>
                     <strong>{{ effect }}</strong>
                     <div>{{{ markdown effect_contents }}}</div>
-                </p>
 
                 <p>
                     {{#each skills }}
