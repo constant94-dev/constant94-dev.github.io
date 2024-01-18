@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>박상준. 판단을 연결하는 백엔드 엔지니어</title>
+    <title>박상준. 백엔드 엔지니어</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,11 @@
             <div class="col-print-6 col-12 col-md-4 d-flex justify-content-between flex-column">
                 <div>
                     <h2 class="mb-0">박상준</h1>
-                    <div class="fs-5">판단을 연결하는 백엔드 엔지니어</div>
+                    <div class="fs-5">백엔드 엔지니어</div>
                 </div>
                 <div>
                     <p>
-                        <time datetime="" class="small">Last update: January 5, 2024</time>
+                        <time datetime="" class="small">Last update: January 18, 2024</time>
                     </p>
                     <p>
                         <span class="screen"><a href="aaron_resume.pdf"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
@@ -65,15 +65,14 @@
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
         <h3 class="mb-4">About Me.</h3>
         <div>
-            <p>웹/앱 서비스 백엔드 개발과 스타트업 조직에서의 다양한 경험이 있습니다.
+            <p>웹/앱 서비스 백엔드 개발자로서 스타트업 조직에서의 다양한 경험이 있습니다
             Java & Spring framework, MySQL, Azure를 주로 사용하여 설계, 개발, 운영까지 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
 
             <p>개발하며 경험한 오류를 분석하고 재밌는 발견들을 포스팅하고 있습니다.
-            현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 GitHub 커뮤니티 활동을 통해 다양한 경험을 즐기고 있습니다.
-            저는 내가 수행하는 엔지니어링이 비즈니스 가치로 연결되었을 때 기쁨을 느낍니다.</p>
+            현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 GitHub 커뮤니티 활동을 통해 다양한 경험을 즐기고 있습니다.</p>
 
-            <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
-            결국 엔지니어링의 종착지는 수많은 연결을 통해 개인의 삶 속에 녹아드는 것으로 생각하기에 연결에 도움을 줄 수 있는 한 명의 개발자로서 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
+            <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 이해관계자들과 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
+            엔지니어링의 결과는 결국, 개인의 삶 속에 녹아드는 것으로 생각하기에 연결에 도움을 줄 수 있는 한 명의 개발자로서 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
         </div>
     </div>
 
@@ -84,15 +83,17 @@
         
         <div class="row d-block d-md-flex mb-5">
             <div class="col-md-12">
-                <h5>노다멘 | <samp>2020.12 - 2023.08</samp></h5>
+                <h5><a href="https://patron.digital/ko/welcome">노다멘</a> | <samp>2020.12 - 2023.08</samp></h5>
                 <strong>Software Engineer</strong>
-                <p>
-                    <a href="https://patron.digital/ko/home">
-                        <span>https://patron.digital/ko/home</span>
-                    </a>
-                </p>
-                <p class="col-12"></p>
+                <div class="row" style="margin: 10px 0 10px 0">
+                    <div class="col bg-light border border-primary rounded">
+                        <span>노다멘은 상류층의 소유물이었던 High-end 예술에서 대중들의 예술로 누구나 저렴하게 쉽고 편하게 즐길 수 있는 미술 감상 서비스입니다.</span>
+                    </div>
+                </div>
             </div>
+
+            <p class="col-12" style="height: 20px;"></p>
+
             <div class="col-md-9">
                 <p>
                     <strong class="fs-5">빌드 &amp; 배포 자동화 구축.</strong>
@@ -101,20 +102,17 @@
                 <p>
                     <strong>&lt;Problem&gt;</strong>
                     <div><p>빌드 &amp; 배포로 소요되는 시간이 평균 90분 발생</p></div>
-                </p>
 
                 <p>
-                    <strong>&lt;Root Cause&gt;</strong>
+                    <strong>&lt;Solution&gt;</strong>
                     <div><p>소스코드를 빌드하고 해당 버전을 이미지화하고 호스트 서버의 배포하는 프로세스의 자동화 필요성을 확인</p></div>
                     <div><p>Terraform 이용해 코드기반 Azure Resource 배포 구성하여 동일한 환경 프로비저닝하도록 보장</p></div>
                     <div><p>Azure Pipelines 를 이용해 파이프라인 구축</p></div>
                     <div><p>도커라이징해서 ACR(Azure Container Registry)로 형상관리 및 AKS(Azure Kubernetes Service) 배포</p></div>
-                </p>
 
                 <p>
-                    <strong>&lt;Effect&gt;</strong>
-                    <div><p>DevOps 구성을 통한 높은 확장성과 빌드&amp;배포 기존 소요시간 대비 90분 👉 5분 개선, 이를 통해 개발 사이클의 낭비를 줄이고 운영팀의 QA 반응을 빠르게 처리</p></div>
-                </p>
+                    <strong>&lt;Impact&gt;</strong>
+                    <div><p>DevOps 구성을 통한 기존 소요시간 대비 90분 👉 5분 개선, QA에서 찾아낸 버그를 빠르게 해결할수 있게 되어 일정 영향없이 필요한 시간내에 제품을 전달</p></div>
 
                 <p>
                     <span class="badge text-body border border-1">Terraform</span>
@@ -131,21 +129,18 @@
                 </p>
                 <p>
                     <strong>&lt;Problem&gt;</strong>
-                    <div><p>예술 작품 감상 서비스 필요</p></div>
-                </p>
+                    <div><p>개발팀 재구성과 예술 감상 레거시 프로젝트 청산</p></div>
 
                 <p>
-                    <strong>&lt;Root Cause&gt;</strong>
+                    <strong>&lt;Solution&gt;</strong>
                     <div><p>요구사항 기획서를 기반으로 개발 타임라인 수립</p></div>
-                    <div><p>서비스 쿼리를 쿼리 메소드 형태로 모두 변경해 Java 코드레벨에서 쿼리 디버깅 해볼 수 있게 구현</p></div>
+                    <div><p>서비스 쿼리를 쿼리 메서드 형태로 모두 변경해 메서드 이름으로 쿼리 구현할 수 있게 구현</p></div>
                     <div><p>Spring Boot 에서 제공하는 어노테이션을 사용하여 불필요한 로직과 요청을 제거</p></div>
                     <div><p>Spring Boot api 를 이용하여 생성, 조회, 수정, 삭제 도메인의 전반적인 라이프사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성</p></div>
-                </p>
 
                 <p>
-                    <strong>&lt;Effect&gt;</strong>
-                    <div><p>PHP 👉 JAVA 언어 전환, 쿼리 메소드 반영, REST API 구축을 통해 api 도메인 설계 및 서비스 상용</p></div>
-                </p>
+                    <strong>&lt;Impact&gt;</strong>
+                    <div><p>PHP 👉 JAVA 언어 전환, 쿼리 메서드 반영, REST API 구축을 통해 api 도메인 설계 및 서비스 상용</p></div>
 
                 <p>
                     <span class="badge text-body border border-1">Java</span>
@@ -163,21 +158,18 @@
                 <p>
                     <strong>&lt;Problem&gt;</strong>
                     <div><p>외주업체가 개발한 레거시 프로젝트에서 서비스 운영 중 트래픽이 몰려 성능 저하 발생</p></div>
-                </p>
 
                 <p>
-                    <strong>&lt;Root Cause&gt;</strong>
+                    <strong>&lt;Solution&gt;</strong>
                     <div><p>외주 업체와의 주기적 미팅을 통해 레거시 프로젝트 분석해 과부하 포인트를 리스트업하고 튜닝 계획 수립</p></div>
                     <div><p>필요한 데이터를 다수의 메인쿼리를 사용해 가져온 후 가져온 데이터를 새로운 쿼리의 정의하고 사용되는 패턴 발견</p></div>
                     <div><p>로드의 30초가 넘어가는 페이지를 리스트업하고 해당 페이지의 SQL 튜닝 계획 수립</p></div>
                     <div><p>EXPLAIN 결과 분석하여 Optimizer 쿼리 실행 계획을 확인</p></div>
                     <div><p>MySQL Workbench 프로파일링 도구 사용해 제공된 성능 지표를 보고 병목 현상 파악</p></div>
-                </p>
 
                 <p>
-                    <strong>&lt;Effect&gt;</strong>
+                    <strong>&lt;Impact&gt;</strong>
                     <div><p>성능 저하가 발생된 쿼리에 대해 실행 계획 분석과 서브쿼리를 작성해 전체 레거시 쿼리 중 20%의 쿼리 개선, 이를 통해 작성된 쿼리를 분석하고 개선하는 방법을 알 수 있었고 성능 저하를 일부분 해결</p></div>
-                </p>
 
                 <p>
                     <span class="badge text-body border border-1">MySQL</span>
