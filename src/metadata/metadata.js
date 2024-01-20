@@ -12,7 +12,7 @@ module.exports = {
       title: '빌드 & 배포 자동화 구축.',
       period: '2023.04 - 2023.07 (4개월)',
       skills: ['Terraform', 'Azure', 'ACR', 'AKS'],
-      problem: `<Problem>`,
+      problem: `<Situation>`,
       problem_contents: `빌드 & 배포로 소요되는 시간이 평균 90분 발생`,
       cause: `<Solution>`,
       cause_contents: [
@@ -28,23 +28,23 @@ module.exports = {
       title: '파트론 웹 사이트 개발.',
       period: '2021.11 - 2022.08 (10개월)',
       skills: ['Java', 'Spring Boot', 'JPA', 'MySQL'],
-      problem: `<Problem>`,
-      problem_contents: `개발팀 재구성과 예술 감상 레거시 프로젝트 청산`,
+      problem: `<Situation>`,
+      problem_contents: `개발팀 재구성과 예술 감상 서비스 레거시 청산`,
       cause: `<Solution>`,
       cause_contents: [
         '요구사항 기획서를 기반으로 개발 타임라인 수립',
-        '서비스 쿼리를 쿼리 메서드 형태로 모두 변경해 메서드 이름으로 쿼리 구현할 수 있게 구현',
+        'JPA 메서드 쿼리 전략으로 서비스 쿼리를 쿼리 메서드 형태로 모두 변경',
         'Spring Boot 에서 제공하는 어노테이션을 사용하여 불필요한 로직과 요청을 제거',
         'Spring Boot api 를 이용하여 생성, 조회, 수정, 삭제 도메인의 전반적인 라이프사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성'
       ],
       effect: `<Impact>`,
-      effect_contents: `PHP 👉 JAVA 언어 전환, 쿼리 메서드 반영, REST API 구축을 통해 api 도메인 설계 및 서비스 상용`
+      effect_contents: `PHP 👉 JAVA 언어 전환, 레거시 청산 완료 후 서비스 체류 시간 10초 👉 1분 증가`
     },
     {
       title: '레거시 프로젝트 리팩토링.',
       period: '2021.01 - 2021.03 (3개월)',
       skills: ['MySQL', 'Sub Query', 'MySQL Workbench'],
-      problem: `<Problem>`,
+      problem: `<Situation>`,
       problem_contents: `외주업체가 개발한 레거시 프로젝트에서 서비스 운영 중 트래픽이 몰려 성능 저하 발생`,
       cause: `<Solution>`,
       cause_contents: [
@@ -55,7 +55,7 @@ module.exports = {
       'MySQL Workbench 프로파일링 도구 사용해 제공된 성능 지표를 보고 병목 현상 파악'
     ],
       effect: `<Impact>`,
-      effect_contents: `성능 저하가 발생된 쿼리에 대해 실행 계획 분석과 서브쿼리를 작성해 전체 레거시 쿼리 중 20%의 쿼리 개선, 이를 통해 작성된 쿼리를 분석하고 개선하는 방법을 알 수 있었고 성능 저하를 일부분 해결`
+      effect_contents: `전체 레거시 쿼리 중 20%의 쿼리 개선, 이를 통해 쿼리 성능 저하를 일부분 해결`
     }
   ],
   skills: [
