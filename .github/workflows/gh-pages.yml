@@ -16,13 +16,14 @@ jobs:
           node-version: '20.x'
       - name: Install Fonts
         run: |
-          sudo apt update && sudo apt upgrade
+          sudo apt update
+          sudo apt upt list --upgradable
           sudo apt install -y locales
           sudo apt install -y language-pack-ko
           sudo locale-gen ko_KR.utf8
           sudo echo -e "export LANGUAGE=ko_KR.UTF-8\n
           export LANG=ko_KR.UTF-8" >> ~/.bashrc
-          sudo source ~/.bashrc
+          source ~/.bashrc
           sudo apt install -y fonts-roboto
           sudo apt install -y fonts-open-sans
       - run: npm install
