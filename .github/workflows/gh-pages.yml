@@ -19,16 +19,9 @@ jobs:
           sudo apt update
           sudo apt list --upgradable
           sudo apt upgrade
-          sudo apt install -y locales
-          sudo apt install -y language-pack-ko
-          sudo locale-gen ko_KR.utf8
-          sudo echo -e "export LANGUAGE=ko_KR.UTF-8\n
-          export LANG=ko_KR.UTF-8" >> ~/.bashrc
-          source ~/.bashrc
-          sudo apt update
-          sudo apt upgrade
           sudo apt install -y fonts-roboto
           sudo apt install -y fonts-open-sans
+          sudo apt install -y fonts-d2coding
       - run: npm install
       - run: npm run build
       - name: Deploy
