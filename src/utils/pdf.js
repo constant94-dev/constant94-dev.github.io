@@ -11,9 +11,9 @@ module.exports = async function buildPdf(inputFile, outputFile) {
     format: 'A4',
     border: 0,
     margin: {
-      top: '2.54cm',
+      top: '2.00cm',
       right: '2.54cm',
-      bottom: '2.54cm',
+      bottom: '1.50cm',
       left: '2.54cm',
     },
   });
