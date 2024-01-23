@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: '20.x'
       - name: Install Fonts
-        run: sudo apt-get install -y fonts-nanum*
+        run: |
+          sudo apt update
+          sudo apt install -y fonts-roboto
       - run: npm install
       - run: npm run build
       - name: Deploy
