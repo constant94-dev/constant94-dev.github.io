@@ -56,10 +56,10 @@
         <h3 class="mb-4">About Me.</h3>
         <div>
             <p>웹/앱 서비스 백엔드 개발자로서 스타트업 조직에서의 다양한 경험이 있습니다.
-                Java & Spring framework, MySQL, Azure를 주로 사용해 설계, 개발, 운영까지 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
+                Java & Spring framework, MySQL를 주로 사용해 설계, 개발 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
 
             <p>개발하며 경험한 오류를 분석하고 재밌는 발견들을 포스팅하고 있습니다.
-                현재는 더 나은 코드, 더 나은 방법을 알기 위해 개인 프로젝트나 CS 전공지식을 GitHub에 재정리하는 경험을 즐기고 있습니다.</p>
+                현재는 더 나은 코드, 더 나은 방법을 알기 위해 개발 서적을 읽고 정리하며 토이 프로젝트를 만들고 있습니다.</p>
 
             <p>개발이란 비즈니스와의 연결이 중요하다고 생각합니다. 좋은 연결을 위해서 이해관계자들과 적극적으로 의사소통하고 문제를 해결하기 위해 뛰어듭니다.
                 회사에 도움이 되는 연결과 포기할줄 아는 용기를 가진 개발자로 성장하기 위해 조금 더 학습하고, 경험하는 매일을 살고 있습니다.</p>
@@ -69,49 +69,86 @@
     <div id="border-dark-line"></div>
 
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
-        <h3 class="mb-4">Work Experience.</h3>
+        <h3 class="mb-4">Professional Experience.</h3>
         
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
-            <div class="col-md-12">
-                <h5><a href="https://patron.digital/ko/welcome">노다멘</a> | <samp>2020.12 - 2023.08</samp></h5>
-                <strong>Software Engineer</strong>
-                <div class="row" style="margin: 10px 0 10px 0">
-                    <div class="col bg-light border border-primary rounded">
-                        <span>노다멘은 상류층의 소유물이었던 High-end 예술에서 대중들의 예술로 누구나 저렴하게 쉽고 편하게 즐길 수 있는 미술 감상 서비스입니다.</span>
+            <div class="row d-block d-md-flex mb-5">
+                <div class="col-md-2">
+                    2024.02 ~ 2024.04
+                </div>
+                <div class="col-md-10">
+                    <h3><a href="https://bodycodi.com/index.html">레드블루</a></h3>
+                    <p>Junior Backend Developer</p>
+                    {{#each redblue_positions}}
+                    <p>
+                        {{#each this.skills}}
+                        <span class="badge text-body border border-1">{{ this }}</span>
+                        {{/each}}
+                    </p>
+                    <div>
+                        <div class="col-md-9">
+                            <p>
+                                <strong class="fs-5">{{ title }}</strong>
+                                <small>{{ period }}</small>
+                            </p>
+                            <p>
+                                <strong>{{ problem }}</strong>
+                            <div>{{{ markdown problem_contents }}}</div>
+
+                            <p>
+                                <strong>{{ cause }}</strong>
+                                {{#each cause_contents}}
+                            <div>{{{ markdown this }}}</div>
+                            {{/each}}
+
+                            <p>
+                                <strong>{{ effect }}</strong>
+                            <div>{{{ markdown effect_contents }}}</div>
+                        </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
 
-            <p class="col-12" style="height: 20px;"></p>
+            <div class="row d-block d-md-flex mb-5">
+                <div class="col-md-2">
+                    2020.12 ~ 2023.08
+                </div>
+                <div class="col-md-10">
+                    <h3><a href="https://patron.digital/ko/welcome">노다멘</a></h3>
+                    <p>Software Engineer</p>
+                    <p>
+                        {{#each nodamen_skills }}
+                            {{#each this.skills}}
+                        <span class="badge text-body border border-1">{{ this }}</span>
+                            {{/each}}
+                        {{/each}}
+                    </p>
+                    {{#each nodamen_positions}}
+                    <div>
+                        <div class="col-md-9 style='border: 2px solid black;'">
+                            <p>
+                                <strong class="fs-5">{{ title }}</strong>
+                                <small>{{ period }}</small>
+                            </p>
+                            <p>
+                                <strong>{{ problem }}</strong>
+                            <div>{{{ markdown problem_contents }}}</div>
 
-            {{#each positions}}
-            <div class="col-md-9">
-                <p>
-                    <strong class="fs-5">{{ title }}</strong>
-                    <small>{{ period }}</small>
-                </p>
-                <p>
-                    <strong>{{ problem }}</strong>
-                    <div>{{{ markdown problem_contents }}}</div>
+                            <p>
+                                <strong>{{ cause }}</strong>
+                                {{#each cause_contents}}
+                            <div>{{{ markdown this }}}</div>
+                            {{/each}}
 
-                <p>
-                    <strong>{{ cause }}</strong>
-                    {{#each cause_contents}}
-                    <div>{{{ markdown this }}}</div>
-                {{/each}}
-
-                <p>
-                    <strong>{{ effect }}</strong>
-                    <div>{{{ markdown effect_contents }}}</div>
-
-                <p>
-                    {{#each skills }}
-                    <span class="badge text-body border border-1">{{ this }}</span>
-                    {{/each}}
-                </p>
-                <p class="col-12" style="height: 20px;"></p>
+                            <p>
+                                <strong>{{ effect }}</strong>
+                            <div>{{{ markdown effect_contents }}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
             </div>
-            {{/each}}
         </div>
     </div>
 
@@ -140,11 +177,12 @@
     <h3 class="mb-4">Education & Additional Experience</h3>
 
     {{#each experience}}
-    <div class="mb-4">
-        <strong>{{ header }}</strong>
-        <p class="fw-normal">
-            {{{ markdown contents }}}
-        </p>
+    <div class="col-md-2">
+        {{ period }}
+    </div>
+    <div class="col-md-10">
+        <h3>{{ header }}</h3>
+        <p>{{ contents }}</p>
         <div>
             {{#each skills }}
             <span class="badge text-body border border-1">{{ this }}</span>
