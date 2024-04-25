@@ -16,11 +16,10 @@ jobs:
           node-version: '20.x'
       - name: Install Fonts
         run: |
-          sudo apt update
-          sudo apt list --upgradable
-          sudo fc-cache -f -v
-          sudo apt install -y fonts-roboto
-          sudo apt install -y fonts-open-sans
+          sudo apt-get update
+          sudo apt-get list --upgradable
+          sudo apt-get install fonts-nanum
+          sudo apt-get install fonts-open-sans
       - run: npm install
       - run: npm run build
       - name: Deploy
