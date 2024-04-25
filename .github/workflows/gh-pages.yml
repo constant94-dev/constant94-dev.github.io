@@ -13,11 +13,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '18.x'
       - name: Install Fonts
         run: |
           sudo apt-get update
-          sudo apt-get list --upgradable
+          sudo apt list --upgradable
           sudo apt-get install fonts-nanum
           sudo apt-get install fonts-open-sans
       - run: npm install
