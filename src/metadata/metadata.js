@@ -16,7 +16,8 @@ module.exports = {
       problem_contents: `장치 연동 데이터를 DBA가 직접 DB 작업 수행`,
       cause: `<Solution>`,
       cause_contents: [
-        'Spring Boot api 를 이용하여 CRUD 전반적인 라이프사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성'
+        'Spring Boot api 를 이용하여 CRUD 전반적인 라이프사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성',
+        'Junit5, MockMvc 이용 Web Layer 테스트'
       ],
       effect: `<Impact>`,
       effect_contents: `ADMIN 페이지에서 운영팀이 직접 데이터를 관리할 수 있게 제공해 운영 효율 개선`
