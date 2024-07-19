@@ -20,7 +20,7 @@ module.exports = {
         'Junit5, MockMvc 이용 Web Layer 테스트'
       ],
       effect: `<Impact>`,
-      effect_contents: `ADMIN 페이지에서 운영팀이 직접 데이터를 관리할 수 있게 제공해 운영 효율 개선`
+      effect_contents: `외부장치 연동을 위해 운영팀과 DBA가 나눠서 하던 작업을 통합 ADMIN 페이지를 개발해 운영업무 프로세스 개선`
     }
   ],
   nodamen_skills: [
