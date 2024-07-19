@@ -17,7 +17,7 @@ module.exports = {
       cause: `<Solution>`,
       cause_contents: [
         'Spring Boot api 를 이용하여 CRUD 전반적인 사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성',
-        'Junit5, MockMvc 이용 Web Layer 테스트'
+        'Junit5, MockMvc 이용 Web Layer, Unit 테스트'
       ],
       effect: `<Impact>`,
       effect_contents: `외부장치 연동을 위해 운영팀과 DBA가 나눠서 하던 작업을 통합 ADMIN 페이지를 개발해 운영업무 프로세스 개선`
