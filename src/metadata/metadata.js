@@ -94,18 +94,6 @@ module.exports = {
   ],
   experience: [
     {
-      header: '우테코 프리코스',
-      skills: ['코드 컨벤션', '테스트 코드', '클래스 분리'],
-      period: '2023.10 - 2023.11',
-      contents: `Junit5 테스트 코드 작성과 가독성 높은 코드 작성 `
-    },
-    {
-      header: 'AWS Bootcamp EKS',
-      skills: ['EKS', 'Observability'],
-      period: '2023.08',
-      contents: `사용자 트래픽이 증가할 때 인프라 구성에 궁금증을 가지고 Bootcamp 참여 `
-    },
-    {
       header: '세종사이버대학교',
       skills: ['CS', 'AWS'],
       period: '2022.03 - 2023.08',
