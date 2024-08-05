@@ -58,26 +58,41 @@
             <p>웹/앱 서비스 백엔드 개발자로서 스타트업 조직에서의 다양한 경험이 있습니다.
                 Java & Spring framework, MySQL를 주로 사용해 설계, 개발 담당하여 B2C 회사 상용 서비스를 1년간 운영해본 경험이 있습니다.</p>
 
-            <p>regacy 쿼리를 분석해 성능 지표를 보고 병목 현상을 해결하였고, 기존에 웹/앱으로 개발되어있던 예술감상 서비스 백(back)단 언어를
-                PHP에서 JAVA로 전환해 regacy를 청산하였습니다.
-                또한, 빌드/배포 프로세스 비용을 줄이기 위해 Azure Pipelines를 사용해 자동화를 구축하여 기존 90분에 소요시간을 5분으로 줄일 수 있었습니다.</p>
+            <p>저는 문제 해결에 대한 능동적인 접근과 적극적인 팀워크를 통해 성과를 달성한 경험이 있습니다.
+                프로젝트 초기 단계에서 발생한 기술적 장애물에 대해, 단순히 문제를 지적하는데 그치지 않고, 원인 분석을 주도하고 팀원들과 함께 실질적인 해결책을 마련했습니다.
+                제안한 해결책이 적용된 후, 프로젝트 일정을 보다 빠르게 맞출 수 있었고 사용자들에게 3초 이하로 랜딩되는 페이지를 보여줄 수 있었습니다.</p>
 
-            <p>프로그램의 예외상황을 줄이고 유지보수성을 높이기 위해 단위 테스트를 작성하였고 더 효과적인 API 개발을 위해 공부하고 있습니다.</p>
+            <p>또한, 팀원들과의 정기적인 소통을 통해 개발 사이클에 낭비시간을 분석해 개선하였고, 프로젝트 전반적인 효율성을 증대시켰습니다.</p>
         </div>
     </div>
 
     <div id="border-dark-line"></div>
 
     <div class="border-print-0 mb-5 pb-print-0 mb-print-1">
-        <h3 class="mb-4">Professional Experience.</h3>
+        <h3 class="mb-4">Technical Experience.</h3>
         
         <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
             <div class="row d-block d-md-flex mb-5">
                 <div class="col-md-2">
-                    2024.02 ~ 2024.04
+                    공백기의 한 일
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="https://bodycodi.com/index.html">레드블루</a></h3>
+                    <strong>
+                        <a href="https://github.com/constant94-dev">작업물 보러가기</a>
+                    </strong>
+                    <ul>
+                        <li>CS전공지식 복습, 알고리즘 공부</li>
+                        <li>관심있던 기술스택 사용한 개인 프로젝트 (WebSocket, Unit Test, Redis)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-block d-md-flex mb-5">
+                <div class="col-md-2">
+                    2024.02 ~ 2024.04 <br/>
+                    <small> (경영 악화로 인한 퇴사) </small>
+                </div>
+                <div class="col-md-10">
+                    <h3><a href="https://bodycodi.com/index.html"><strong>레드블루</strong></a></h3>
                     <p>Junior Backend Developer</p>
                     {{#each redblue_positions}}
                     <p>
@@ -86,24 +101,23 @@
                         {{/each}}
                     </p>
                     <div>
-                        <div class="col-md-9">
+                        <div>
                             <p>
                                 <strong class="fs-5">{{ title }}</strong>
                                 <small>{{ period }}</small>
                             </p>
-                            <p>
-                                <strong>{{ problem }}</strong>
-                            <div>{{{ markdown problem_contents }}}</div>
 
-                            <p>
-                                <strong>{{ cause }}</strong>
-                                {{#each cause_contents}}
-                            <div>{{{ markdown this }}}</div>
-                            {{/each}}
+                            <strong>{{ problem }}</strong>
+                            <ul>
+                                {{#each this.problem_contents}}
+                                <li>{{{ this }}}</li>
+                                {{/each}}
+                            </ul>
 
-                            <p>
-                                <strong>{{ effect }}</strong>
-                            <div>{{{ markdown effect_contents }}}</div>
+                            <strong>{{ effect }}</strong>
+                            <ul>
+                                <li>{{{ markdown effect_contents }}}</li>
+                            </ul>
                         </div>
                         {{/each}}
                     </div>
@@ -115,7 +129,7 @@
                     2020.12 ~ 2023.08
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="https://patron.digital/ko/welcome">노다멘</a></h3>
+                    <h3><a href="https://patron.digital/ko/welcome"><strong>노다멘</strong></a></h3>
                     <p>Software Engineer</p>
                     <p>
                         {{#each nodamen_skills }}
@@ -126,24 +140,23 @@
                     </p>
                     {{#each nodamen_positions}}
                     <div>
-                        <div class="col-md-9 style='border: 2px solid black;'">
+                        <div>
                             <p>
                                 <strong class="fs-5">{{ title }}</strong>
                                 <small>{{ period }}</small>
                             </p>
-                            <p>
-                                <strong>{{ problem }}</strong>
-                            <div>{{{ markdown problem_contents }}}</div>
 
-                            <p>
-                                <strong>{{ cause }}</strong>
-                                {{#each cause_contents}}
-                            <div>{{{ markdown this }}}</div>
-                            {{/each}}
+                            <strong>{{ problem }}</strong>
+                            <ul>
+                                {{#each this.problem_contents}}
+                                <li>{{{ this }}}</li>
+                                {{/each}}
+                            </ul>
 
-                            <p>
-                                <strong>{{ effect }}</strong>
-                            <div>{{{ markdown effect_contents }}}</div>
+                            <strong>{{ effect }}</strong>
+                            <ul>
+                                <li>{{{ markdown effect_contents }}}</li>
+                            </ul>
                         </div>
                         {{/each}}
                     </div>
