@@ -55,7 +55,7 @@ module.exports = {
         'Azure Database for MariaDB를 데이터베이스로 사용'
       ],
       effect: `<Impact>`,
-      effect_contents: `PHP 👉 JAVA 언어 전환, 내부 개발자들 기술스택 맞출 수 있어 생산성 향상`
+      effect_contents: `PHP 👉 JAVA 언어 전환, 개발 팀원 생산성 향상`
     },
     {
       title: '레거시 쿼리 리팩토링.',
