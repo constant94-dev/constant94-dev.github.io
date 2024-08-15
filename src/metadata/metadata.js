@@ -92,13 +92,13 @@ module.exports = {
       header: '세종사이버대학교',
       skills: ['CS', 'AWS'],
       period: '2022.03 - 2023.08',
-      contents: `CS(Computer Science) 전공 지식과 AWS 인프라 구성 실습`
+      contents: `소프트웨어공학 학사 졸업`
     },
     {
       header: '부천대학교',
       skills: ['Network', '아두이노'],
       period: '2013.03 - 2017.08',
-      contents: `Network 관련 전공 지식과 전자회로 실습`
+      contents: `정보통신공학 전문학사 졸업`
     }
   ],
   pdf_name: 'ethan_resume',
