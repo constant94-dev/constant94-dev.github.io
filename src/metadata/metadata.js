@@ -75,14 +75,14 @@ module.exports = {
   ],
   side: [
     {
-      title: 'JJWT를 활용한 공통 인증/인가 라이브러리 개발.',
+      title: 'JJWT 오픈소스 활용 공통 인증/인가 라이브러리 개발.',
       skills: ['Java', 'Spring MVC', 'Redis', 'Docker'],
       contents: [
-        '인가 코드 발급은 Hash 사용으로 저장 공간을 절약하고 코드 역추적 불가',
-        '인증 토큰 발급은 JWE(Encrypted JWT)를 사용해 데이터 보호'
+        '해당 라이브러리에서는 인가 코드를 Hash 방식으로 저장하여 저장 공간을 절약하고, 역추적이 불가능하도록 구현',
+        '또한, 인증 토큰 발급 시 JWE(Encrypted JWT)를 사용하여 데이터 보호를 강화'
       ],
-      effect: `<풀고자 하는 문제>`,
-      effect_contents: `모든 API서버가 공유해야 하는 세션을 한 곳에서 관리해 인증 시스템 부담 완화하고 데이터 보안성 증가`
+      effect: `<해결하려는 문제>`,
+      effect_contents: `API 서버 간 세션 데이터 불일치로 인한 잠재적 보안 취약점을 감소시키고 관리의 용이성과 인증 시스템 확장성을 높임`
     }
   ],
   skills: [
