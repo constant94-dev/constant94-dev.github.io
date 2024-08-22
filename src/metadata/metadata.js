@@ -73,6 +73,18 @@ module.exports = {
       effect_contents: `전체 레거시 쿼리 중 20%의 쿼리 개선, 이를 통해 쿼리 성능 저하를 일부분 해결`
     }
   ],
+  side: [
+    {
+      title: 'JJWT를 활용한 공통 인증/인가 라이브러리 개발.',
+      skills: ['Java', 'Spring MVC', 'Redis', 'Docker'],
+      contents: [
+        '인가 코드 발급은 Hash 사용으로 저장 공간을 절약하고 코드 역추적 불가',
+        '인증 토큰 발급은 JWE(Encrypted JWT)를 사용해 데이터 보호'
+      ],
+      effect: `<풀고자 하는 문제>`,
+      effect_contents: `모든 API서버가 공유해야 하는 세션을 한 곳에서 관리해 인증 시스템 부담 완화하고 데이터 보안성 증가`
+    }
+  ],
   skills: [
     {
       title: 'Backend',
@@ -102,5 +114,5 @@ module.exports = {
     }
   ],
   pdf_name: 'ethan_resume',
-  pdf_title: 'back-end-engineer'
+  pdf_title: 'backend-engineer'
 };

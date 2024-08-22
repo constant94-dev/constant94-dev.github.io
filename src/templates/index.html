@@ -101,7 +101,7 @@
                     <small> (경영 악화로 인한 퇴사) </small>
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="https://bodycodi.com/index.html"><strong>레드블루</strong></a></h3>
+                    <h5><a href="https://bodycodi.com/index.html"><strong>레드블루</strong></a></h5>
                     <p>Junior Backend Developer</p>
                     {{#each redblue_positions}}
                     <p>
@@ -138,7 +138,7 @@
                     2020.12 ~ 2023.08
                 </div>
                 <div class="col-md-10">
-                    <h3><a href="https://patron.digital/ko/welcome"><strong>노다멘</strong></a></h3>
+                    <h5><a href="https://patron.digital/ko/welcome"><strong>노다멘</strong></a></h5>
                     <p>Software Engineer</p>
                     <p>
                         {{#each nodamen_skills }}
@@ -170,6 +170,45 @@
                         {{/each}}
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="border-dark-line"></div>
+
+    <!-- side project -->
+    <div class="row d-block d-md-flex mb-5">
+        <h3 class="mb-4">Side Project.</h3>
+        <div class="col-md-2">
+            2024.07 ~ <br/>
+        </div>
+        <div class="col-md-10">
+            <h5><a href="https://github.com/constant94-dev/thubalcain"><strong>Thubalcain</strong></a></h5>
+
+            {{#each side}}
+            <p>
+                {{#each this.skills}}
+                <span class="badge text-body border border-1">{{ this }}</span>
+                {{/each}}
+            </p>
+            <div>
+                <div>
+                    <p>
+                        <strong class="fs-5">{{ title }}</strong>
+                    </p>
+
+                    <ul>
+                        {{#each this.contents}}
+                        <li>{{{ this }}}</li>
+                        {{/each}}
+                    </ul>
+
+                    <strong>{{ effect }}</strong>
+                    <ul>
+                        <li>{{{ markdown effect_contents }}}</li>
+                    </ul>
+                </div>
+                {{/each}}
             </div>
         </div>
     </div>
