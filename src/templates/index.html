@@ -235,6 +235,20 @@
 
     <div id="border-dark-line"></div>
 
+    <h3 class="mb-4">License.</h3>
+
+    {{#each license}}
+    <div class="col-md-2">
+        {{ period }}
+    </div>
+    <div class="col-md-10">
+        <h5><strong>{{ header }}</strong></h5>
+        <small>{{ contents }}</small>
+    </div>
+    {{/each}}
+
+    <div id="border-dark-line"></div>
+
     <h3 class="mb-4">Education.</h3>
 
     {{#each experience}}

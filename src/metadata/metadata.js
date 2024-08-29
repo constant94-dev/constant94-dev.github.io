@@ -99,6 +99,13 @@ module.exports = {
       skills: ['Confluence','Jira','Slack','Google Workspace','Figma']
     }
   ],
+  license: [
+    {
+      header: '정보처리산업기사',
+      period: '발행: 2020.09.03',
+      contents: `식별번호 20202050935U`
+    }
+  ],
   experience: [
     {
       header: '세종사이버대학교',
