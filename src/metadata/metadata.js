@@ -15,7 +15,7 @@ module.exports = {
       problem_contents: [
         `장치 연동 데이터를 DBA가 직접 DB 작업 수행`,
         'Spring Boot api 를 이용하여 CRUD 전반적인 사이클에 대해서 설계하고 지속적인 리팩토링을 통해 API를 RESTful 하게 구성',
-        'Junit5, MockMvc 이용 Web Layer, Unit 테스트'
+        'Junit5, MockMvc 이용해 분리 된 Layer 테스트'
       ],
       effect: `<Impact>`,
       effect_contents: `외부장치 연동을 위해 운영팀과 DBA가 나눠서 하던 작업을 통합 ADMIN 페이지를 개발해 운영업무 프로세스 개선`
@@ -67,7 +67,7 @@ module.exports = {
         '로드의 10초가 넘어가는 페이지를 리스트업하고 해당 페이지의 SQL 튜닝 계획 수립',
         '메인 쿼리를 사용하여 필요한 데이터를 추출한 뒤, 새로운 쿼리를 정의하고 사용되는 패턴을 다수 발견',
         'EXPLAIN 결과를 분석하여 Optimizer 쿼리 실행 계획을 확인',
-        '쿼리를 사용할 때마다 수행되던 트랜잭션을 연관된 쿼리끼리 하나의 트랜잭션으로 처리할 수 있게 변경'
+        '불러오는 페이지에서 필요없는 데이터까지 가져오는 쿼리를 분리 및 병합하여 기존 쿼리 변경'
       ],
       effect: `<Impact>`,
       effect_contents: `전체 레거시 쿼리 중 20%의 쿼리 개선, 이를 통해 쿼리 성능 저하를 일부분 해결`
